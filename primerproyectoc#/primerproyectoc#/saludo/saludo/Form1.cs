@@ -19,7 +19,7 @@ namespace saludo
 
         private void btnSaludar_Click(object sender, EventArgs e)
         {
-            lblSaludar.Text = "Hola," + txtNombre.Text + "!";
+            lblSaludar.Text = "Hola buenos dias," + txtNombre.Text + "!";
         }
     }
 }
