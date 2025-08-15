@@ -8,3 +8,4 @@ C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\WindowsFo
 C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config

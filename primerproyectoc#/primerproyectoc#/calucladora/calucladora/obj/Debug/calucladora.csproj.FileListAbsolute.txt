@@ -1,0 +1,5 @@
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\calucladora\calucladora\obj\Debug\calucladora.csproj.AssemblyReference.cache
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\calucladora\calucladora\obj\Debug\calucladora.Form1.resources
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\calucladora\calucladora\obj\Debug\calucladora.Properties.Resources.resources
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\calucladora\calucladora\obj\Debug\calucladora.csproj.GenerateResource.cache
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\calucladora\calucladora\obj\Debug\calucladora.csproj.CoreCompileInputs.cache
