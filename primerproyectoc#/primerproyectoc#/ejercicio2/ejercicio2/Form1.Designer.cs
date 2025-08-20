@@ -31,9 +31,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.lblSueldo = new System.Windows.Forms.Label();
             this.txtsueldo = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSueldoneto = new System.Windows.Forms.Label();
             this.lblAFP = new System.Windows.Forms.Label();
             this.lblISSS = new System.Windows.Forms.Label();
+            this.lblIsr = new System.Windows.Forms.Label();
+            this.lblTotaldeduciones = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -62,15 +64,15 @@
             this.txtsueldo.Size = new System.Drawing.Size(155, 22);
             this.txtsueldo.TabIndex = 2;
             // 
-            // label1
+            // lblSueldoneto
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 180);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "sueldo:";
+            this.lblSueldoneto.AutoSize = true;
+            this.lblSueldoneto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSueldoneto.Location = new System.Drawing.Point(19, 180);
+            this.lblSueldoneto.Name = "lblSueldoneto";
+            this.lblSueldoneto.Size = new System.Drawing.Size(119, 25);
+            this.lblSueldoneto.TabIndex = 3;
+            this.lblSueldoneto.Text = "sueldo neto:";
             // 
             // lblAFP
             // 
@@ -93,14 +95,37 @@
             this.lblISSS.TabIndex = 5;
             this.lblISSS.Text = "ISSS:";
             // 
+            // lblIsr
+            // 
+            this.lblIsr.AutoSize = true;
+            this.lblIsr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIsr.Location = new System.Drawing.Point(19, 226);
+            this.lblIsr.Name = "lblIsr";
+            this.lblIsr.Size = new System.Drawing.Size(50, 25);
+            this.lblIsr.TabIndex = 6;
+            this.lblIsr.Text = "ISR:";
+            // 
+            // lblTotaldeduciones
+            // 
+            this.lblTotaldeduciones.AutoSize = true;
+            this.lblTotaldeduciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotaldeduciones.Location = new System.Drawing.Point(19, 263);
+            this.lblTotaldeduciones.Name = "lblTotaldeduciones";
+            this.lblTotaldeduciones.Size = new System.Drawing.Size(160, 25);
+            this.lblTotaldeduciones.TabIndex = 7;
+            this.lblTotaldeduciones.Text = "total deduciones:";
+            this.lblTotaldeduciones.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblTotaldeduciones);
+            this.Controls.Add(this.lblIsr);
             this.Controls.Add(this.lblISSS);
             this.Controls.Add(this.lblAFP);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblSueldoneto);
             this.Controls.Add(this.txtsueldo);
             this.Controls.Add(this.lblSueldo);
             this.Controls.Add(this.button1);
@@ -116,9 +141,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblSueldo;
         private System.Windows.Forms.TextBox txtsueldo;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSueldoneto;
         private System.Windows.Forms.Label lblAFP;
         private System.Windows.Forms.Label lblISSS;
+        private System.Windows.Forms.Label lblIsr;
+        private System.Windows.Forms.Label lblTotaldeduciones;
     }
 }
 

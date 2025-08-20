@@ -1,0 +1,16 @@
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\bin\Debug\convertidor.exe.config
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\bin\Debug\convertidor.exe
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\bin\Debug\convertidor.pdb
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\obj\Debug\convertidor.csproj.AssemblyReference.cache
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\obj\Debug\convertidor.Form1.resources
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\obj\Debug\convertidor.Properties.Resources.resources
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\obj\Debug\convertidor.csproj.GenerateResource.cache
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\obj\Debug\convertidor.csproj.CoreCompileInputs.cache
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\obj\Debug\convertidor.exe
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\obj\Debug\convertidor.pdb
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\obj\Debug\convertidor.exe.config
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\obj\Debug\convertidor.Form2.resources
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\obj\Debug\convertidor.Form3.resources
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\obj\Debug\convertidor.Form4.resources
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\obj\Debug\convertidor.Form5.resources
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\convertidor\convertidor\obj\Debug\convertidor.Form6.resources
