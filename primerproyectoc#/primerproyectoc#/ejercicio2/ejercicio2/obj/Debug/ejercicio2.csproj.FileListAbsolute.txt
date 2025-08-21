@@ -1,0 +1,11 @@
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\ejercicio2\ejercicio2\obj\Debug\ejercicio2.csproj.AssemblyReference.cache
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\ejercicio2\ejercicio2\obj\Debug\ejercicio2.Form1.resources
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\ejercicio2\ejercicio2\obj\Debug\ejercicio2.Properties.Resources.resources
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\ejercicio2\ejercicio2\obj\Debug\ejercicio2.csproj.GenerateResource.cache
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\ejercicio2\ejercicio2\obj\Debug\ejercicio2.csproj.CoreCompileInputs.cache
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\ejercicio2\ejercicio2\bin\Debug\ejercicio2.exe.config
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\ejercicio2\ejercicio2\bin\Debug\ejercicio2.exe
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\ejercicio2\ejercicio2\bin\Debug\ejercicio2.pdb
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\ejercicio2\ejercicio2\obj\Debug\ejercicio2.exe
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\ejercicio2\ejercicio2\obj\Debug\ejercicio2.pdb
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\ejercicio2\ejercicio2\obj\Debug\ejercicio2.exe.config
