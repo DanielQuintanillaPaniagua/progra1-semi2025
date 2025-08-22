@@ -29,13 +29,9 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.lblSueldo = new System.Windows.Forms.Label();
-            this.txtsueldo = new System.Windows.Forms.TextBox();
-            this.lblSueldoneto = new System.Windows.Forms.Label();
-            this.lblAFP = new System.Windows.Forms.Label();
-            this.lblISSS = new System.Windows.Forms.Label();
-            this.lblIsr = new System.Windows.Forms.Label();
-            this.lblTotaldeduciones = new System.Windows.Forms.Label();
+            this.lblSerie = new System.Windows.Forms.Label();
+            this.txtserie = new System.Windows.Forms.TextBox();
+            this.lblsuma = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -46,88 +42,43 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "calcular";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lblSueldo
+            // lblSerie
             // 
-            this.lblSueldo.AutoSize = true;
-            this.lblSueldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSueldo.Location = new System.Drawing.Point(30, 49);
-            this.lblSueldo.Name = "lblSueldo";
-            this.lblSueldo.Size = new System.Drawing.Size(76, 25);
-            this.lblSueldo.TabIndex = 1;
-            this.lblSueldo.Text = "sueldo:";
+            this.lblSerie.AutoSize = true;
+            this.lblSerie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSerie.Location = new System.Drawing.Point(30, 49);
+            this.lblSerie.Name = "lblSerie";
+            this.lblSerie.Size = new System.Drawing.Size(60, 25);
+            this.lblSerie.TabIndex = 1;
+            this.lblSerie.Text = "serie:";
             // 
-            // txtsueldo
+            // txtserie
             // 
-            this.txtsueldo.Location = new System.Drawing.Point(125, 53);
-            this.txtsueldo.Name = "txtsueldo";
-            this.txtsueldo.Size = new System.Drawing.Size(155, 22);
-            this.txtsueldo.TabIndex = 2;
+            this.txtserie.Location = new System.Drawing.Point(125, 53);
+            this.txtserie.Name = "txtserie";
+            this.txtserie.Size = new System.Drawing.Size(155, 22);
+            this.txtserie.TabIndex = 2;
             // 
-            // lblSueldoneto
+            // lblsuma
             // 
-            this.lblSueldoneto.AutoSize = true;
-            this.lblSueldoneto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSueldoneto.Location = new System.Drawing.Point(19, 180);
-            this.lblSueldoneto.Name = "lblSueldoneto";
-            this.lblSueldoneto.Size = new System.Drawing.Size(119, 25);
-            this.lblSueldoneto.TabIndex = 3;
-            this.lblSueldoneto.Text = "sueldo neto:";
-            // 
-            // lblAFP
-            // 
-            this.lblAFP.AutoSize = true;
-            this.lblAFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAFP.Location = new System.Drawing.Point(30, 139);
-            this.lblAFP.Name = "lblAFP";
-            this.lblAFP.Size = new System.Drawing.Size(57, 25);
-            this.lblAFP.TabIndex = 4;
-            this.lblAFP.Text = "AFP:";
-            this.lblAFP.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lblISSS
-            // 
-            this.lblISSS.AutoSize = true;
-            this.lblISSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblISSS.Location = new System.Drawing.Point(30, 97);
-            this.lblISSS.Name = "lblISSS";
-            this.lblISSS.Size = new System.Drawing.Size(65, 25);
-            this.lblISSS.TabIndex = 5;
-            this.lblISSS.Text = "ISSS:";
-            // 
-            // lblIsr
-            // 
-            this.lblIsr.AutoSize = true;
-            this.lblIsr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIsr.Location = new System.Drawing.Point(19, 226);
-            this.lblIsr.Name = "lblIsr";
-            this.lblIsr.Size = new System.Drawing.Size(50, 25);
-            this.lblIsr.TabIndex = 6;
-            this.lblIsr.Text = "ISR:";
-            // 
-            // lblTotaldeduciones
-            // 
-            this.lblTotaldeduciones.AutoSize = true;
-            this.lblTotaldeduciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotaldeduciones.Location = new System.Drawing.Point(19, 263);
-            this.lblTotaldeduciones.Name = "lblTotaldeduciones";
-            this.lblTotaldeduciones.Size = new System.Drawing.Size(160, 25);
-            this.lblTotaldeduciones.TabIndex = 7;
-            this.lblTotaldeduciones.Text = "total deduciones:";
-            this.lblTotaldeduciones.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblsuma.AutoSize = true;
+            this.lblsuma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsuma.Location = new System.Drawing.Point(30, 99);
+            this.lblsuma.Name = "lblsuma";
+            this.lblsuma.Size = new System.Drawing.Size(66, 25);
+            this.lblsuma.TabIndex = 3;
+            this.lblsuma.Text = "suma:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblTotaldeduciones);
-            this.Controls.Add(this.lblIsr);
-            this.Controls.Add(this.lblISSS);
-            this.Controls.Add(this.lblAFP);
-            this.Controls.Add(this.lblSueldoneto);
-            this.Controls.Add(this.txtsueldo);
-            this.Controls.Add(this.lblSueldo);
+            this.Controls.Add(this.lblsuma);
+            this.Controls.Add(this.txtserie);
+            this.Controls.Add(this.lblSerie);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -139,13 +90,9 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label lblSueldo;
-        private System.Windows.Forms.TextBox txtsueldo;
-        private System.Windows.Forms.Label lblSueldoneto;
-        private System.Windows.Forms.Label lblAFP;
-        private System.Windows.Forms.Label lblISSS;
-        private System.Windows.Forms.Label lblIsr;
-        private System.Windows.Forms.Label lblTotaldeduciones;
+        private System.Windows.Forms.Label lblSerie;
+        private System.Windows.Forms.TextBox txtserie;
+        private System.Windows.Forms.Label lblsuma;
     }
 }
 
