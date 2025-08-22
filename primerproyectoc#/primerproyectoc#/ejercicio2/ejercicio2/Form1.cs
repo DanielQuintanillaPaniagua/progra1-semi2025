@@ -16,17 +16,44 @@ namespace ejercicio2
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        String[][] etiquetas = new string[][] {
+            new string[]{"Dolar", "Pesos Mexicanos", "Quetzal", "Lempira", "Colon SV", "Cordobas", "Colon CR"}, //Monedas
+            new string[]{"Metros", "Cm", "Pulgadas","Pie", "Varas", "Yardas", "Km", "Millas"}, //Longitud
+            new string[]{"Libra", "Onza", "Gramo", "Kg", "Quintal", "Tonelada Corta"}, //Masa
+            new string[]{"Galon Us", "Litros", "Pinta Us", "Ml"}, //Volumen
+            new string[]{"GB", "Bit", "Byte", "KB", "MG", "TB"}, //Almacenamiento
+            new string[]{"Dia", "Segundos", "Minutos", "Horas", "Semana", "Meses", "Año"}, //Tiempo
+        };
+        double[][] valores = new double[][] {
+            new double []{1,18.78, 7.66, 26.15, 8.75, 36.78, 504.12}, //Monedas
+            new double []{1, 100, 39.37, 3.28084, 1.193, 1.09361, 0.001, 0.000621371}, //Longitud
+            new double []{1, 16, 453.592, 0.453592, 0.01, 0.001,0.0005}, //Masa
+            new double []{1, 3.78541, 8, 3785.41}, //Volumen
+            new double []{1, 8e+9, 1e+9, 1e+6, 1000, 0.001}, //Almacenamiento
+            new double []{1, 86400, 1440, 24, 0.142857, 0.0328767, 0.00273973}, //Tiempo
+        };
+        private void btnConvertir_Click(object sender, EventArgs e)
         {
-            string[] serie = txtserie.Text.Split(',');
-            int suma = 0;
-            for (int i = 0; i < serie.Length; i++)
-            {
-                suma = suma + int.Parse(serie[i]);
-            }
-            lblsuma.Text = "Suma: " + suma;
+            double cantidad = double.Parse(txtCantidad.Text);
+
+            int tipo = cboTipo.SelectedIndex;
+            int de = cboDe.SelectedIndex;
+            int a = cboA.SelectedIndex;
+
+            double respuesta = cantidad * valores[tipo][a] / valores[tipo][de];
+
+            lblRespuesta.Text = "RESPUESTA: " + respuesta.ToString("N2");
+        }
+
+        private void cboTipoConversor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboDe.Items.Clear();
+            cboA.Items.Clear();
+            cboDe.Items.AddRange(etiquetas[cboTipo.SelectedIndex]);
+            cboA.Items.AddRange(etiquetas[cboTipo.SelectedIndex]);
+
         }
     }
 }
+
 
