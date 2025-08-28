@@ -71,6 +71,7 @@
             "volumen",
             "almacenamiento",
             "tiempo",
+            "Area",
             " "});
             this.cboTipo.Location = new System.Drawing.Point(85, 53);
             this.cboTipo.Name = "cboTipo";

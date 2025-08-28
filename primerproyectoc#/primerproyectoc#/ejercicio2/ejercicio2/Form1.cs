@@ -23,6 +23,7 @@ namespace ejercicio2
             new string[]{"Galon Us", "Litros", "Pinta Us", "Ml"}, //Volumen
             new string[]{"GB", "Bit", "Byte", "KB", "MG", "TB"}, //Almacenamiento
             new string[]{"Dia", "Segundos", "Minutos", "Horas", "Semana", "Meses", "Año"}, //Tiempo
+            new string[]{"kilometro cuatrado","metro cuadrado","milla cuadrada","yarda cuadrada","pie cuadrado","puulgada cuadrada","hectaria","acre"} //Area
         };
         double[][] valores = new double[][] {
             new double []{1,18.78, 7.66, 26.15, 8.75, 36.78, 504.12}, //Monedas
@@ -31,18 +32,35 @@ namespace ejercicio2
             new double []{1, 3.78541, 8, 3785.41}, //Volumen
             new double []{1, 8e+9, 1e+9, 1e+6, 1000, 0.001}, //Almacenamiento
             new double []{1, 86400, 1440, 24, 0.142857, 0.0328767, 0.00273973}, //Tiempo
+            new double []{1, 1e+6, 0.386102, 1.196e+6, 1.076e+7, 1.55e+9,99.998} //Area
+
         };
+        private double convertir(int tipo, int de, int a, double cantidad)
+        {
+            if (cantidad <= 0)
+            {
+                return 0;
+            }
+            return cantidad * valores[tipo][a] / valores[tipo][de];
+        }
         private void btnConvertir_Click(object sender, EventArgs e)
         {
-            double cantidad = double.Parse(txtCantidad.Text);
+            try
+            {
+                double cantidad = double.Parse(txtCantidad.Text);
 
-            int tipo = cboTipo.SelectedIndex;
-            int de = cboDe.SelectedIndex;
-            int a = cboA.SelectedIndex;
+                int tipo = cboTipo.SelectedIndex;
+                int de = cboDe.SelectedIndex;
+                int a = cboA.SelectedIndex;
+                double respuesta = convertir(tipo, de, a, cantidad);
 
-            double respuesta = cantidad * valores[tipo][a] / valores[tipo][de];
 
-            lblRespuesta.Text = "RESPUESTA: " + respuesta.ToString("N2");
+                lblRespuesta.Text = "RESPUESTA: " + respuesta.ToString("N2");
+            }
+            catch (Exception er)
+            {
+                lblRespuesta.Text = "Error " + er.Message + " solo valores validos";
+            }
         }
 
         private void cboTipoConversor_SelectedIndexChanged(object sender, EventArgs e)
