@@ -1,0 +1,11 @@
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parceal ejercicio 2\parceal ejercicio 2\bin\Debug\parceal ejercicio 2.exe.config
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parceal ejercicio 2\parceal ejercicio 2\bin\Debug\parceal ejercicio 2.exe
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parceal ejercicio 2\parceal ejercicio 2\bin\Debug\parceal ejercicio 2.pdb
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parceal ejercicio 2\parceal ejercicio 2\obj\Debug\parceal ejercicio 2.csproj.AssemblyReference.cache
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parceal ejercicio 2\parceal ejercicio 2\obj\Debug\parceal_ejercicio_2.Form1.resources
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parceal ejercicio 2\parceal ejercicio 2\obj\Debug\parceal_ejercicio_2.Properties.Resources.resources
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parceal ejercicio 2\parceal ejercicio 2\obj\Debug\parceal ejercicio 2.csproj.GenerateResource.cache
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parceal ejercicio 2\parceal ejercicio 2\obj\Debug\parceal ejercicio 2.csproj.CoreCompileInputs.cache
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parceal ejercicio 2\parceal ejercicio 2\obj\Debug\parceal ejercicio 2.exe
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parceal ejercicio 2\parceal ejercicio 2\obj\Debug\parceal ejercicio 2.pdb
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parceal ejercicio 2\parceal ejercicio 2\obj\Debug\parceal ejercicio 2.exe.config

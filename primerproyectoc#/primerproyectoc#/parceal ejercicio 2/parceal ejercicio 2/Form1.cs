@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ejercicio2
+namespace parceal_ejercicio_2
 {
     public partial class Form1 : Form
     {
@@ -16,12 +16,15 @@ namespace ejercicio2
         {
             InitializeComponent();
         }
-        String[][] etiquetas = new string[][] {
-      
-             new string[]{"Pie Cuadrado", "Vara Cuadrada", "Yarda Cuadrada", "Metro Cuadrado", "Tareas","Manzana","Hectárea" }
+
+        
+        
+            String[][] etiquetas = new string[][] {
+
+             new string[]{"Pie Cuadrado", "Varda Cuadrada", "Yarda Cuadrada", "Metro Cuadrado", "Tareas","Manzana","Hectárea" }
         };
         double[][] valores = new double[][] {
-           new double []{0.092903,0,705012 ,0.836127, 1e-6,437.5,10000}
+           new double []{0.8359, 0.8361, 0.0929, 1,1000, 6988, 10000 }
 
 
         };
@@ -63,5 +66,3 @@ namespace ejercicio2
         }
     }
 }
-
-

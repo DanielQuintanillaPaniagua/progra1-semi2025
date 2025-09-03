@@ -65,14 +65,7 @@
             this.cboTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipo.FormattingEnabled = true;
             this.cboTipo.Items.AddRange(new object[] {
-            "Moneda",
-            "logitud",
-            "masa",
-            "volumen",
-            "almacenamiento",
-            "tiempo",
-            "Area",
-            " "});
+            "areas"});
             this.cboTipo.Location = new System.Drawing.Point(85, 53);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(158, 24);
@@ -83,6 +76,14 @@
             // 
             this.cboDe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDe.FormattingEnabled = true;
+            this.cboDe.Items.AddRange(new object[] {
+            "Pie Cuadrado",
+            "Vara Cuadrada",
+            "Yarda Cuadrada",
+            "Metro Cuadrado",
+            "tarea",
+            "manzana",
+            "Hectárea"});
             this.cboDe.Location = new System.Drawing.Point(85, 103);
             this.cboDe.Name = "cboDe";
             this.cboDe.Size = new System.Drawing.Size(158, 24);
@@ -102,6 +103,14 @@
             // 
             this.cboA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboA.FormattingEnabled = true;
+            this.cboA.Items.AddRange(new object[] {
+            "Pie Cuadrado",
+            "Vara Cuadrada",
+            "Yarda Cuadrada",
+            "Metro Cuadrado",
+            "tarea",
+            "manzana",
+            "Hectárea"});
             this.cboA.Location = new System.Drawing.Point(341, 107);
             this.cboA.Name = "cboA";
             this.cboA.Size = new System.Drawing.Size(158, 24);

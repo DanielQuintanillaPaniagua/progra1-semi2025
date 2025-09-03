@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ejercicio2
+namespace parcial
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
         String[][] etiquetas = new string[][] {
-      
+
              new string[]{"Pie Cuadrado", "Vara Cuadrada", "Yarda Cuadrada", "Metro Cuadrado", "Tareas","Manzana","Hectárea" }
         };
         double[][] valores = new double[][] {
@@ -61,7 +61,10 @@ namespace ejercicio2
             cboA.Items.AddRange(etiquetas[cboTipo.SelectedIndex]);
 
         }
+
+        private void btnConvertir_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
-
-

@@ -1,0 +1,12 @@
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parcial\parcial\obj\Debug\parcial.csproj.AssemblyReference.cache
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parcial\parcial\obj\Debug\parcial.Form1.resources
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parcial\parcial\obj\Debug\parcial.Properties.Resources.resources
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parcial\parcial\obj\Debug\parcial.csproj.GenerateResource.cache
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parcial\parcial\obj\Debug\parcial.csproj.CoreCompileInputs.cache
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parcial\parcial\obj\Debug\parcial.Form2.resources
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parcial\parcial\bin\Debug\parcial.exe.config
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parcial\parcial\bin\Debug\parcial.exe
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parcial\parcial\bin\Debug\parcial.pdb
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parcial\parcial\obj\Debug\parcial.exe
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parcial\parcial\obj\Debug\parcial.pdb
+C:\Users\danie\Desktop\Nueva carpeta\primerproyectoc#\primerproyectoc#\parcial\parcial\obj\Debug\parcial.exe.config
