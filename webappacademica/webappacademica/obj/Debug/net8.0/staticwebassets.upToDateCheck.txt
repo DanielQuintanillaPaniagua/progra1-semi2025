@@ -1,4 +1,4 @@
 wwwroot\img\UGB_LOGO_AZUL.png
 wwwroot\views\alumno.html
 wwwroot\views\index.html
-wwwroot\views\buscar_alumno.html
+wwwroot\views\busqueda_alumno.html

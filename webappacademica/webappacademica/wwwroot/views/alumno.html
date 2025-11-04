@@ -69,8 +69,19 @@
         }
     }
     function limpiarDatosAlumno() {
+        accion = "nuevo";
+        idAlumno = 0;
         txtCodigoAlumno.value = "";
         txtNombreAlumno.value = "";
         txtDireccionAlumno.value = "";
         txtTelefonoAlumno.value = "";
-    }</script>
+    }
+    function modificarAlumno(alumno) {
+        accion = "modificar";
+        idAlumno = alumno.idAlumno;
+        txtCodigoAlumno.value = alumno.codigo;
+        txtNombreAlumno.value = alumno.nombre;
+        txtDireccionAlumno.value = alumno.direccion;
+        txtTelefonoAlumno.value = alumno.telefono;
+    }
+    </script>
