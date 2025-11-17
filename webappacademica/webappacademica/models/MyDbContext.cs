@@ -9,6 +9,8 @@
     public DbSet<Alumno>Alumnos { get; set; }
     public DbSet<Materia> Materias { get; set; }
     public DbSet<Docente> Docentes { get; set; }
+    public DbSet<Periodo> Periodos { get; set; }
+
 
 
 
@@ -18,12 +20,14 @@
         modelBuilder.Entity <Alumno>().HasKey(a => a.idAlumno);
          modelBuilder.Entity <Materia>().HasKey(m => m.idMateria);
             modelBuilder.Entity <Docente>().HasKey(d => d.idDocente);
+            modelBuilder.Entity<Periodo>().HasKey(p => p.idPeriodo);
+
 
         }
 
 
 
-}
+    }
 }
 
     
