@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webappacademica", "webappacademica\webappacademica.csproj", "{9C8B3E10-C715-4603-9EAF-1464B3D7B6D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webappacademica", "webappacademica\webappacademica.csproj", "{6D272D30-E865-44D4-BBCF-9C0F92FBAA3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9C8B3E10-C715-4603-9EAF-1464B3D7B6D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C8B3E10-C715-4603-9EAF-1464B3D7B6D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C8B3E10-C715-4603-9EAF-1464B3D7B6D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C8B3E10-C715-4603-9EAF-1464B3D7B6D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D272D30-E865-44D4-BBCF-9C0F92FBAA3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D272D30-E865-44D4-BBCF-9C0F92FBAA3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D272D30-E865-44D4-BBCF-9C0F92FBAA3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D272D30-E865-44D4-BBCF-9C0F92FBAA3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F879ABA0-2FEB-46E7-8325-E6BD7C94B7FA}
+		SolutionGuid = {2869DF82-3685-474F-AF0E-52BF07DF845F}
 	EndGlobalSection
 EndGlobal

@@ -10,6 +10,9 @@
     public DbSet<Materia> Materias { get; set; }
     public DbSet<Docente> Docentes { get; set; }
     public DbSet<Periodo> Periodos { get; set; }
+    public DbSet<Matricula> Matriculas { get; set; }
+
+
 
 
 
@@ -21,7 +24,19 @@
          modelBuilder.Entity <Materia>().HasKey(m => m.idMateria);
             modelBuilder.Entity <Docente>().HasKey(d => d.idDocente);
             modelBuilder.Entity<Periodo>().HasKey(p => p.idPeriodo);
+            modelBuilder.Entity<Matricula>().HasKey(mt => mt.idMatricula);
+            modelBuilder.Entity<Matricula>()
+               .HasOne(a => a.Alumno)
+               .WithMany(m => m.Matriculas)
+               .HasForeignKey(mt => mt.idAlumno)
+               .OnDelete(DeleteBehavior.Cascade);
 
+            /
+            modelBuilder.Entity<Matricula>()
+                .HasOne(p => p.Periodo)
+                .WithMany(m => m.Matriculas)
+                .HasForeignKey(mt => mt.idPeriodo)
+                .OnDelete(DeleteBehavior.Cascade);
 
         }
 
