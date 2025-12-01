@@ -5,29 +5,43 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using webappacademica.models;
+using webappacademica.Models;
 
 namespace webappacademica.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AlumnoController : ControllerBase
+    public class AlumnosController : ControllerBase
     {
         private readonly MyDbContext _context;
 
-        public AlumnoController(MyDbContext context)
+        public AlumnosController(MyDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Alumno
+        // GET: api/Alumnos
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Alumno>>> GetAlumnos()
         {
             return await _context.Alumnos.ToListAsync();
         }
 
-        // GET: api/Alumno/5
+        // GET: api/Alumnos/buscar
+        [HttpGet("buscar")]
+        public async Task<ActionResult<IEnumerable<Alumno>>> BuscarAlumno([FromQuery] AlumnoBusquedaParametros parametros) {
+            var consulta = _context.Alumnos.AsQueryable();
+            if (!string.IsNullOrEmpty(parametros.buscar)) {
+                consulta = consulta.Where(alumno => alumno.nombre.Contains(parametros.buscar));
+            }
+            if(!string.IsNullOrEmpty(parametros.buscar) && consulta.Count() <= 0) {
+                consulta = _context.Alumnos.AsQueryable();
+                consulta = consulta.Where(alumno => alumno.codigo.Contains(parametros.buscar));
+            }
+            return await consulta.ToListAsync();
+        }
+
+        // GET: api/Alumnos/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Alumno>> GetAlumno(int id)
         {
@@ -41,7 +55,7 @@ namespace webappacademica.Controllers
             return alumno;
         }
 
-        // PUT: api/Alumno/5
+        // PUT: api/Alumnos/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAlumno(int id, Alumno alumno)
@@ -68,11 +82,10 @@ namespace webappacademica.Controllers
                     throw;
                 }
             }
-
-            return NoContent();
+            return CreatedAtAction("GetAlumno", new { id = alumno.idAlumno }, alumno);
         }
 
-        // POST: api/Alumno
+        // POST: api/Alumnos
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Alumno>> PostAlumno(Alumno alumno)
@@ -83,7 +96,7 @@ namespace webappacademica.Controllers
             return CreatedAtAction("GetAlumno", new { id = alumno.idAlumno }, alumno);
         }
 
-        // DELETE: api/Alumno/5
+        // DELETE: api/Alumnos/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAlumno(int id)
         {
@@ -105,4 +118,3 @@ namespace webappacademica.Controllers
         }
     }
 }
-

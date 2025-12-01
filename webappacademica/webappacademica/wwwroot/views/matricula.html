@@ -40,7 +40,8 @@
         </div>
     </div>
 </form>
-<script>var accion = 'nuevo',
+<script>
+    var accion = 'nuevo',
         idMatricula = 0;
     frmMatricula.addEventListener('submit', e => {
         e.preventDefault();
@@ -108,6 +109,7 @@
         accion = "modificar";
         idMatricula = matricula.idMatricula;
         txtFechaMatricula.value = new Date(matricula.fecha).toLocaleDateString("en-GB").split("/").reverse().join("-");
-        txtAlumnoMatricula.value = matricula.alumno.trim();
-        txtPeriodoMatricula.value = matricula.periodo.trim();
-    }</script>
+        txtAlumnoMatricula.value = matricula.alumno.nombre.trim();
+        txtPeriodoMatricula.value = matricula.periodo.periodo.trim();
+    }
+</script>

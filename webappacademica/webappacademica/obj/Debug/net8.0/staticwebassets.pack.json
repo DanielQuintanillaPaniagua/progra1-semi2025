@@ -1,0 +1,73 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Semi-2025\\webappacademica\\webappacademica\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Semi-2025\\webappacademica\\webappacademica\\wwwroot\\views\\alumno.html",
+      "PackagePath": "staticwebassets\\views\\alumno.html"
+    },
+    {
+      "Id": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Semi-2025\\webappacademica\\webappacademica\\wwwroot\\views\\app.js",
+      "PackagePath": "staticwebassets\\views\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Semi-2025\\webappacademica\\webappacademica\\wwwroot\\views\\busqueda_alumno.html",
+      "PackagePath": "staticwebassets\\views\\busqueda_alumno.html"
+    },
+    {
+      "Id": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Semi-2025\\webappacademica\\webappacademica\\wwwroot\\views\\busqueda_docente.html",
+      "PackagePath": "staticwebassets\\views\\busqueda_docente.html"
+    },
+    {
+      "Id": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Semi-2025\\webappacademica\\webappacademica\\wwwroot\\views\\busqueda_materia.html",
+      "PackagePath": "staticwebassets\\views\\busqueda_materia.html"
+    },
+    {
+      "Id": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Semi-2025\\webappacademica\\webappacademica\\wwwroot\\views\\busqueda_matricula.html",
+      "PackagePath": "staticwebassets\\views\\busqueda_matricula.html"
+    },
+    {
+      "Id": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Semi-2025\\webappacademica\\webappacademica\\wwwroot\\views\\busqueda_periodo.html",
+      "PackagePath": "staticwebassets\\views\\busqueda_periodo.html"
+    },
+    {
+      "Id": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Semi-2025\\webappacademica\\webappacademica\\wwwroot\\views\\docente.html",
+      "PackagePath": "staticwebassets\\views\\docente.html"
+    },
+    {
+      "Id": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Semi-2025\\webappacademica\\webappacademica\\wwwroot\\views\\index.html",
+      "PackagePath": "staticwebassets\\views\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Semi-2025\\webappacademica\\webappacademica\\wwwroot\\views\\materia.html",
+      "PackagePath": "staticwebassets\\views\\materia.html"
+    },
+    {
+      "Id": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Semi-2025\\webappacademica\\webappacademica\\wwwroot\\views\\matricula.html",
+      "PackagePath": "staticwebassets\\views\\matricula.html"
+    },
+    {
+      "Id": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Semi-2025\\webappacademica\\webappacademica\\wwwroot\\views\\periodo.html",
+      "PackagePath": "staticwebassets\\views\\periodo.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.webappacademica.props",
+      "PackagePath": "build\\webappacademica.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.webappacademica.props",
+      "PackagePath": "buildMultiTargeting\\webappacademica.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.webappacademica.props",
+      "PackagePath": "buildTransitive\\webappacademica.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.webappacademica.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

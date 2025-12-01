@@ -5,22 +5,22 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using webappacademica.models;
+using webappacademica.Models;
 
 namespace webappacademica.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PeriodoesController : ControllerBase
+    public class PeriodosController : ControllerBase
     {
         private readonly MyDbContext _context;
 
-        public PeriodoesController(MyDbContext context)
+        public PeriodosController(MyDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Periodoes
+        // GET: api/Periodos
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Periodo>>> GetPeriodos()
         {
@@ -29,22 +29,19 @@ namespace webappacademica.Controllers
 
         // GET: api/Periodos/buscar
         [HttpGet("buscar")]
-        public async Task<ActionResult<IEnumerable<Periodo>>> BuscarPeriodo([FromQuery] PeriodoBusquedaParametro parametros)
-        {
+        public async Task<ActionResult<IEnumerable<Periodo>>> BuscarPeriodo([FromQuery] PeriodoBusquedaParametro parametros) {
             var consulta = _context.Periodos.AsQueryable();
-            if (!string.IsNullOrEmpty(parametros.buscar))
-            {
+            if (!string.IsNullOrEmpty(parametros.buscar)) {
                 consulta = consulta.Where(periodo => periodo.fecha.ToString().Contains(parametros.buscar));
             }
-            if (!string.IsNullOrEmpty(parametros.buscar) && consulta.Count() <= 0)
-            {
+            if (!string.IsNullOrEmpty(parametros.buscar) && consulta.Count() <= 0) {
                 consulta = _context.Periodos.AsQueryable();
                 consulta = consulta.Where(periodo => periodo.periodo.Contains(parametros.buscar));
             }
             return await consulta.ToListAsync();
         }
 
-        // GET: api/Periodoes/5
+        // GET: api/Periodos/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Periodo>> GetPeriodo(int id)
         {
@@ -58,7 +55,7 @@ namespace webappacademica.Controllers
             return periodo;
         }
 
-        // PUT: api/Periodoes/5
+        // PUT: api/Periodos/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPeriodo(int id, Periodo periodo)
@@ -85,12 +82,10 @@ namespace webappacademica.Controllers
                     throw;
                 }
             }
-
             return CreatedAtAction("GetPeriodo", new { id = periodo.idPeriodo }, periodo);
-
         }
 
-        // POST: api/Periodoes
+        // POST: api/Periodos
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Periodo>> PostPeriodo(Periodo periodo)
@@ -101,7 +96,7 @@ namespace webappacademica.Controllers
             return CreatedAtAction("GetPeriodo", new { id = periodo.idPeriodo }, periodo);
         }
 
-        // DELETE: api/Periodoes/5
+        // DELETE: api/Periodos/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePeriodo(int id)
         {

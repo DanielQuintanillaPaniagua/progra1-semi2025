@@ -1,9 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace webappacademica.models
-{
-    public class Docente
-    {
+namespace webappacademica.Models {
+    public class Docente {
         [Key]
         public int idDocente { get; set; }
         public string codigo { get; set; }

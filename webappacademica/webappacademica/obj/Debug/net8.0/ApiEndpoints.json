@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "webappacademica.Controllers.AlumnoController",
+    "ContainingType": "webappacademica.Controllers.AlumnosController",
     "Method": "GetAlumnos",
-    "RelativePath": "api/Alumno",
+    "RelativePath": "api/Alumnos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[webappacademica.models.Alumno, webappacademica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[webappacademica.Models.Alumno, webappacademica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -20,22 +20,22 @@
     ]
   },
   {
-    "ContainingType": "webappacademica.Controllers.AlumnoController",
+    "ContainingType": "webappacademica.Controllers.AlumnosController",
     "Method": "PostAlumno",
-    "RelativePath": "api/Alumno",
+    "RelativePath": "api/Alumnos",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "alumno",
-        "Type": "webappacademica.models.Alumno",
+        "Type": "webappacademica.Models.Alumno",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "webappacademica.models.Alumno",
+        "Type": "webappacademica.Models.Alumno",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -46,9 +46,9 @@
     ]
   },
   {
-    "ContainingType": "webappacademica.Controllers.AlumnoController",
+    "ContainingType": "webappacademica.Controllers.AlumnosController",
     "Method": "GetAlumno",
-    "RelativePath": "api/Alumno/{id}",
+    "RelativePath": "api/Alumnos/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -61,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "webappacademica.models.Alumno",
+        "Type": "webappacademica.Models.Alumno",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -72,9 +72,9 @@
     ]
   },
   {
-    "ContainingType": "webappacademica.Controllers.AlumnoController",
+    "ContainingType": "webappacademica.Controllers.AlumnosController",
     "Method": "PutAlumno",
-    "RelativePath": "api/Alumno/{id}",
+    "RelativePath": "api/Alumnos/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -86,16 +86,16 @@
       },
       {
         "Name": "alumno",
-        "Type": "webappacademica.models.Alumno",
+        "Type": "webappacademica.Models.Alumno",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "webappacademica.Controllers.AlumnoController",
+    "ContainingType": "webappacademica.Controllers.AlumnosController",
     "Method": "DeleteAlumno",
-    "RelativePath": "api/Alumno/{id}",
+    "RelativePath": "api/Alumnos/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -109,6 +109,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "webappacademica.Controllers.AlumnosController",
+    "Method": "BuscarAlumno",
+    "RelativePath": "api/Alumnos/buscar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "buscar",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[webappacademica.Models.Alumno, webappacademica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "webappacademica.Controllers.DocentesController",
     "Method": "GetDocentes",
     "RelativePath": "api/Docentes",
@@ -118,7 +144,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[webappacademica.models.Docente, webappacademica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[webappacademica.Models.Docente, webappacademica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -138,13 +164,13 @@
     "Parameters": [
       {
         "Name": "docente",
-        "Type": "webappacademica.models.Docente",
+        "Type": "webappacademica.Models.Docente",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "webappacademica.models.Docente",
+        "Type": "webappacademica.Models.Docente",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -170,7 +196,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "webappacademica.models.Docente",
+        "Type": "webappacademica.Models.Docente",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -195,7 +221,7 @@
       },
       {
         "Name": "docente",
-        "Type": "webappacademica.models.Docente",
+        "Type": "webappacademica.Models.Docente",
         "IsRequired": true
       }
     ],
@@ -233,7 +259,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[webappacademica.models.Docente, webappacademica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[webappacademica.Models.Docente, webappacademica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -253,7 +279,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[webappacademica.models.Materia, webappacademica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[webappacademica.Models.Materia, webappacademica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -273,13 +299,13 @@
     "Parameters": [
       {
         "Name": "materia",
-        "Type": "webappacademica.models.Materia",
+        "Type": "webappacademica.Models.Materia",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "webappacademica.models.Materia",
+        "Type": "webappacademica.Models.Materia",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -305,7 +331,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "webappacademica.models.Materia",
+        "Type": "webappacademica.Models.Materia",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -330,7 +356,7 @@
       },
       {
         "Name": "materia",
-        "Type": "webappacademica.models.Materia",
+        "Type": "webappacademica.Models.Materia",
         "IsRequired": true
       }
     ],
@@ -368,7 +394,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[webappacademica.models.Materia, webappacademica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[webappacademica.Models.Materia, webappacademica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -379,16 +405,16 @@
     ]
   },
   {
-    "ContainingType": "webappacademica.Controllers.PeriodoesController",
-    "Method": "GetPeriodos",
-    "RelativePath": "api/Periodoes",
+    "ContainingType": "webappacademica.Controllers.MatriculasController",
+    "Method": "GetMatriculas",
+    "RelativePath": "api/Matriculas",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[webappacademica.models.Periodo, webappacademica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -399,22 +425,22 @@
     ]
   },
   {
-    "ContainingType": "webappacademica.Controllers.PeriodoesController",
-    "Method": "PostPeriodo",
-    "RelativePath": "api/Periodoes",
+    "ContainingType": "webappacademica.Controllers.MatriculasController",
+    "Method": "PostMatricula",
+    "RelativePath": "api/Matriculas",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "periodo",
-        "Type": "webappacademica.models.Periodo",
+        "Name": "matricula",
+        "Type": "webappacademica.Models.Matricula",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "webappacademica.models.Periodo",
+        "Type": "webappacademica.Models.Matricula",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -425,9 +451,9 @@
     ]
   },
   {
-    "ContainingType": "webappacademica.Controllers.PeriodoesController",
-    "Method": "GetPeriodo",
-    "RelativePath": "api/Periodoes/{id}",
+    "ContainingType": "webappacademica.Controllers.MatriculasController",
+    "Method": "GetMatricula",
+    "RelativePath": "api/Matriculas/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -440,7 +466,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "webappacademica.models.Periodo",
+        "Type": "webappacademica.Models.Matricula",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -451,9 +477,9 @@
     ]
   },
   {
-    "ContainingType": "webappacademica.Controllers.PeriodoesController",
-    "Method": "PutPeriodo",
-    "RelativePath": "api/Periodoes/{id}",
+    "ContainingType": "webappacademica.Controllers.MatriculasController",
+    "Method": "PutMatricula",
+    "RelativePath": "api/Matriculas/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -464,17 +490,17 @@
         "IsRequired": true
       },
       {
-        "Name": "periodo",
-        "Type": "webappacademica.models.Periodo",
+        "Name": "matricula",
+        "Type": "webappacademica.Models.Matricula",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "webappacademica.Controllers.PeriodoesController",
-    "Method": "DeletePeriodo",
-    "RelativePath": "api/Periodoes/{id}",
+    "ContainingType": "webappacademica.Controllers.MatriculasController",
+    "Method": "DeleteMatricula",
+    "RelativePath": "api/Matriculas/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -488,9 +514,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "webappacademica.Controllers.PeriodoesController",
-    "Method": "BuscarPeriodo",
-    "RelativePath": "api/Periodoes/buscar",
+    "ContainingType": "webappacademica.Controllers.MatriculasController",
+    "Method": "BuscarMatricula",
+    "RelativePath": "api/Matriculas/buscar",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -503,7 +529,142 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[webappacademica.models.Periodo, webappacademica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "webappacademica.Controllers.PeriodosController",
+    "Method": "GetPeriodos",
+    "RelativePath": "api/Periodos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[webappacademica.Models.Periodo, webappacademica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "webappacademica.Controllers.PeriodosController",
+    "Method": "PostPeriodo",
+    "RelativePath": "api/Periodos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "periodo",
+        "Type": "webappacademica.Models.Periodo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "webappacademica.Models.Periodo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "webappacademica.Controllers.PeriodosController",
+    "Method": "GetPeriodo",
+    "RelativePath": "api/Periodos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "webappacademica.Models.Periodo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "webappacademica.Controllers.PeriodosController",
+    "Method": "PutPeriodo",
+    "RelativePath": "api/Periodos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "periodo",
+        "Type": "webappacademica.Models.Periodo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webappacademica.Controllers.PeriodosController",
+    "Method": "DeletePeriodo",
+    "RelativePath": "api/Periodos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webappacademica.Controllers.PeriodosController",
+    "Method": "BuscarPeriodo",
+    "RelativePath": "api/Periodos/buscar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "buscar",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[webappacademica.Models.Periodo, webappacademica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

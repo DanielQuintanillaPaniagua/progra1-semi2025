@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using webappacademica.models;
+using webappacademica.Models;
 
 namespace webappacademica.Controllers
 {
@@ -29,21 +29,17 @@ namespace webappacademica.Controllers
 
         // GET: api/Docentes/buscar
         [HttpGet("buscar")]
-        public async Task<ActionResult<IEnumerable<Docente>>> BuscarDocente([FromQuery] DocenteBusquedaParametros parametros)
-        {
+        public async Task<ActionResult<IEnumerable<Docente>>> BuscarDocente([FromQuery] DocenteBusquedaParametros parametros) {
             var consulta = _context.Docentes.AsQueryable();
-            if (!string.IsNullOrEmpty(parametros.buscar))
-            {
+            if (!string.IsNullOrEmpty(parametros.buscar)) {
                 consulta = consulta.Where(docente => docente.nombre.Contains(parametros.buscar));
             }
-            if (!string.IsNullOrEmpty(parametros.buscar) && consulta.Count() <= 0)
-            {
+            if (!string.IsNullOrEmpty(parametros.buscar) && consulta.Count() <= 0) {
                 consulta = _context.Docentes.AsQueryable();
                 consulta = consulta.Where(docente => docente.codigo.Contains(parametros.buscar));
             }
             return await consulta.ToListAsync();
         }
-
 
         // GET: api/Docentes/5
         [HttpGet("{id}")]
@@ -88,7 +84,6 @@ namespace webappacademica.Controllers
             }
 
             return CreatedAtAction("GetDocente", new { id = docente.idDocente }, docente);
-
         }
 
         // POST: api/Docentes

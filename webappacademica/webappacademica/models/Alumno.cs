@@ -1,14 +1,16 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace webappacademica.models
-{
-    public class Alumno
-    {
+namespace webappacademica.Models {
+    public class Alumno {
         [Key]
         public int idAlumno { get; set; }
-        public string Codigo { get; set; }
-        public string Nombre { get; set; }
-        public string Dirrecion { get; set; }
-        public string Telefono { get; set; }
+        
+        public string codigo { get; set; }
+        public string nombre { get; set; }
+        public string direccion { get; set; }
+        public string telefono { get; set; }
+
+        //Relacion con la tabla matriculas
+        public ICollection<Matricula> Matriculas { get; set; }
     }
 }

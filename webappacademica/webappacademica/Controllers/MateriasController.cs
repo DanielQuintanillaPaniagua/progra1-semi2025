@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using webappacademica.models;
+using webappacademica.Models;
 
 namespace webappacademica.Controllers
 {
@@ -26,17 +26,15 @@ namespace webappacademica.Controllers
         {
             return await _context.Materias.ToListAsync();
         }
+
         // GET: api/Materias/buscar
         [HttpGet("buscar")]
-        public async Task<ActionResult<IEnumerable<Materia>>> BuscarMateria([FromQuery] MateriaBusquedaParametros parametros)
-        {
+        public async Task<ActionResult<IEnumerable<Materia>>> BuscarMateria([FromQuery] MateriaBusquedaParametros parametros) {
             var consulta = _context.Materias.AsQueryable();
-            if (!string.IsNullOrEmpty(parametros.buscar))
-            {
-                consulta = consulta.Where(materia => materia.nombre.ToString().Contains(parametros.buscar));
+            if (!string.IsNullOrEmpty(parametros.buscar)) {
+                consulta = consulta.Where(materia => materia.nombre.Contains(parametros.buscar));
             }
-            if (!string.IsNullOrEmpty(parametros.buscar) && consulta.Count() <= 0)
-            {
+            if (!string.IsNullOrEmpty(parametros.buscar) && consulta.Count() <= 0) {
                 consulta = _context.Materias.AsQueryable();
                 consulta = consulta.Where(materia => materia.codigo.Contains(parametros.buscar));
             }
@@ -84,9 +82,7 @@ namespace webappacademica.Controllers
                     throw;
                 }
             }
-
             return CreatedAtAction("GetMateria", new { id = materia.idMateria }, materia);
-
         }
 
         // POST: api/Materias

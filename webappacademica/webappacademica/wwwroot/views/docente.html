@@ -46,11 +46,11 @@
                     <div class="input-group mb-3">
                         <label class="input-group-text" for="imgFotoDocente">Subir</label>
                         <input type="file" class="form-control" id="imgFotoDocente" name="imgFotoDocente"
-                               accept="image/*" onchange="seleccionarImg(this)" />
+                               accept="image/*" onchange="seleccionarImg(this)"/>
                     </div>
                 </div>
                 <div class="col-3 col-md-4">
-                    <img class="img-thumbnail rounded" id="imgPreVisualizacionFotoDocente" />
+                    <img class="img-thumbnail rounded" id="imgPreVisualizacionFotoDocente" /> 
                 </div>
             </div>
             <div class="row p-1">
@@ -63,7 +63,8 @@
         </div>
     </div>
 </form>
-<script>var accion = 'nuevo',
+<script>
+    var accion = 'nuevo',
         idDocente = 0,
         miFoto = '';
     frmDocente.addEventListener('submit', e => {
@@ -128,4 +129,4 @@
         txtEmailDocente.value = docente.email;
         miFoto = 'data:image/png;base64,' + docente.foto;
     }
-</scri
+</script>

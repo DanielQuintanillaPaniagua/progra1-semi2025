@@ -1,7 +1,5 @@
-namespace webappacademica
-{
-    public class WeatherForecast
-    {
+namespace webappacademica {
+    public class WeatherForecast {
         public DateOnly Date { get; set; }
 
         public int TemperatureC { get; set; }

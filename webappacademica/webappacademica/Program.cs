@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using webappacademica.models;
+using webappacademica.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,26 +10,21 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder .Services.AddDbContext<MyDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-{
- 
+builder.Services.AddDbContext<MyDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+if (app.Environment.IsDevelopment()) {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app .UseStaticFiles();
-    app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
 
 app.Run();
-}
